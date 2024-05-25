@@ -5,21 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/style.css">    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/script.js"></script>
     <title>Portifólio Diego</title>
 </head>
 <body>
- 
-    <h1>Portifólio Diego</h1>
 
-    <button type="button" onclick="teste()">Teste</button>
+    <button onclick="teste()" id="myBtn" title="Go to top">Teste</button>
 
-    <div class="alert alert-primary" role="alert">
-        Um simples alerta primary. Olha só!
-      </div>
-    
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Meu Nome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experiência</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção de Introdução -->
+    <section id="about" class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="profile.jpg" class="img-fluid rounded-circle" alt="Foto de perfil">
+            </div>
+            <div class="col-md-8">
+                <h1>Olá, eu sou [Seu Nome]</h1>
+                <p>Sou um [sua profissão] com experiência em [sua área de especialização].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Experiência -->
+    <section id="experience" class="container mt-5">
+        <h2>Experiência</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Empresa XYZ</h3>
+                <p><strong>Período:</strong> Janeiro 2020 - Presente</p>
+                <p><strong>Posição:</strong> Desenvolvedor Web</p>
+                <p><strong>Descrição:</strong> Desenvolvimento de aplicações web utilizando tecnologias modernas.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Empresa ABC</h3>
+                <p><strong>Período:</strong> Junho 2018 - Dezembro 2019</p>
+                <p><strong>Posição:</strong> Analista de Sistemas</p>
+                <p><strong>Descrição:</strong> Análise e desenvolvimento de sistemas internos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Habilidades -->
+    <section id="skills" class="container mt-5">
+        <h2>Habilidades</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript & jQuery</li>
+                    <li>React & Angular</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Node.js & Express</li>
+                    <li>Python & Django</li>
+                    <li>Banco de Dados SQL & NoSQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Portfólio -->
+    <section id="portfolio" class="container mt-5">
+        <h2>Portfólio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Descrição breve do projeto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project2.jpg" class="card-img-top" alt="Projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Descrição breve do projeto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project3.jpg" class="card-img-top" alt="Projeto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 3</h5>
+                        <p class="card-text">Descrição breve do projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
