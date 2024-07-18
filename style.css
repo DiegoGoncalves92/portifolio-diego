@@ -2,7 +2,7 @@ body{
     margin-top:20px;
     color: #1a202c;
     text-align: left;
-    background-color: #e2e8f0;    
+    background-color: #97bfc9;    
 }
 .main-body {
     padding: 15px;
@@ -50,4 +50,16 @@ body{
 }
 .shadow-none {
     box-shadow: none!important;
+}
+
+.modal_sobremim{
+    background-color: #fff;
+    width: 100%;   
+    display: flex;
+    position: fixed;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    border: red 1px solid;
+    /* max-width: 50%; */
 }
